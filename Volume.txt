@@ -1,0 +1,35 @@
+You are preparing plans for your desert lair. You know you will need a good supply of water and plan to construct an underground cistern to hold the water. You plan to fill this reservoir using moisture evaporator, but would like to know how long it will take to do so.
+
+Write a program to compute the total volume of a cistern in cubic feet. Determine the volume in gallons and the amount of time required to fill the cistern given a supply with a certain rate.
+
+Note: This program is designed for incremental development. Complete each step and submit for grading before starting the next step. Only a portion of tests pass after each step but confirm progress.
+
+Step 1 Read from input the length, width, and depth of the reservoir as floats. Calculate and output the expected reservoir volume in cubic feet to two decimal places.
+
+Ex: If the input is:
+
+21.5 25.5 12.6 4.5
+the output is:
+
+Reservoir volume: 6907.95 cu. ft
+Step 2 Calculate and output the amount of water in gallons the reservoir will contain when full. Display the result to one decimal place. One cubic foot can hold 7.48 gallons of water.
+
+Ex: If the input is:
+
+21.5 25.5 12.6 4.5
+the output is:
+
+Reservoir volume: 6907.95 cu. ft
+Water volume: 51671.5 gallons
+Step 3 (2 pts). Read from input a fourth value that represents the number of liters per minute that a moisture extraction system can provide. (It is imported so the system specifies only liters per minute) Calculate the number of hours needed to fill the reservoir using the system and show the result to one decimal place.
+
+Note: 1 gallon = 3.78541 liters and one hour is 60 minutes. Be sure to convert the fill rate from liters per minute to gallons per hour.
+
+Ex: If the input is:
+
+21.5 25.5 12.6 2.5
+the output is:
+
+Reservoir volume: 6907.95 cu. ft
+Water volume: 51671.5 gallons
+Time to fill: 724.4 hour(s)
