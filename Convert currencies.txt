@@ -1,0 +1,19 @@
+In this exercise, you will write a program to convert money between different currencies. The program takes as input the original currency, the amount to be exchanged, and the currency to convert into. It outputs the amount in the new currency with two-digits of precision.
+
+For example, given the input
+
+EUR 2 USD
+The output should be
+
+2.18
+The valid currencies for this program are EUR (Euros), USD (American Dollars) and YEN (Japanese Yen). They will be entered using 3 letters identifiers: EUR, USD, YEN.
+
+Use the following values for the conversions (you should be able to use these values to convert in both directions):
+
+1 EUR = 1.09 USD
+1 EUR = 141.70 YEN
+1 USD = 130.18 YEN
+If the user enters the wrong identifier for one of the currencies (that is, anything other than EUR, USD or YEN), print the message
+
+Invalid input
+End all messages with a new line.
