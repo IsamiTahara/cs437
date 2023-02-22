@@ -1,0 +1,23 @@
+Write a program that takes a list of integers as input. The input begins with an integer indicating the number of integers that follow. You can safely assume that the number of integers entered is always less than or equal to 10. The program then determines whether these integers are sorted in the ascending order (i.e., from the smallest to the largest), descending order (i.e., from the largest to the smallest), or are out of order. If these integers are sorted in the ascending order, the program will output Sorted - Ascending. If the values are in descending order, the program will output Sorted - Descending. Otherwise, it will output Unsorted.
+
+Ex: if the user enters:
+
+7 1 3 4 2 4 5 7
+the program will output:
+
+Unsorted
+If the user enters:
+
+7 1 2 4 5 7 9 10
+the program will output:
+
+Sorted - Ascending
+If the user enters:
+
+5 7 5 4 1 0
+the program will output:
+
+Sorted - Descending
+You MUST define and call the following function to determine whether the integers are sorted in the ascending order or not. This function will take the array of the integers and its size as input and return a boolean value with true indicating sorted and false for unsorted. If the array is sorted, message parameter should be set to the correct string representing the sort ordering.
+
+bool isSorted(int array[], int size, string& message);
