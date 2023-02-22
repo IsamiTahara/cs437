@@ -1,0 +1,24 @@
+This is your first day at the Bioinformatic lab. You need to write a program that can compare two DNA strings of the same length, list the indexes where they are different, and keep track of the number of differences.
+
+Write the compareDNA() function that accepts two strings (of the same length) , and a results integer array. You can safely assume that the strings will not be longer than 10 characters. The function keeps track of how many character differences were detected, and for each difference, put the current index into the results integer array. Lastly, the function returns the number of character differences detected.
+
+In the main function, the user will enter two strings (no spaces in each string). If both strings are the same, the program will print
+
+The two DNAs are an exact match!
+else it will print
+
+There are <num_difference> differences detected.
+The indexes are: <index[0] index[1] ...>
+For example, when the input is
+
+ATCCTTCGAC
+ATCTTTCGCC
+The output will be
+
+There are 2 differences detected.
+The indexes are: 3 8 
+
+You MUST define and call the following function to pass the unit tests
+
+int compareDNA(string dna1, string dna2, int results[])
+    
