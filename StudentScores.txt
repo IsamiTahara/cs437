@@ -1,0 +1,39 @@
+Define a structure, named StudentScores, that contains four member variables, including name (a string), mathScore (an integer), scienceScore (an integer), socialStudyScore (an integer).
+
+Write a program to accept a number of students' records from the standard input. You can safely assume that the number of students to be entered is not more than 10. The input of student records is in the following format
+
+<number of students>
+<name>
+<math score> <science score> <social study score>
+number of students indicates the number of students' scores to be entered next.
+
+The following shows an example input
+
+3
+Sharp Shark
+100 96 93
+Ya Hoo
+88 89 95
+Apple Juice
+91 92 89
+(1) Declare a StudentScores array to store the students' score information. Print out all the students' scores received in the following format
+
+<name>, Math: <math_score>, Science: <science_score>, Social Study: <social_study_score>
+(2) Update the score of a course of a particular student. The program will print out a message:
+
+Please enter a student's name, followed by the course name and the new score in a separate line:
+Given the following input from the standard input
+
+Ya Hoo
+Math 95
+The program will then output:
+
+Updated Math score of Ya Hoo
+Ya Hoo, Math: 95, Science: 89, Social Study: 95
+You can safely assume that the student whose score will be updated always exists in the list of input students, and the subject is either Math or Science.
+
+You should define and call the following function to update the score of a given student
+
+void updateStudentScore(StudentScores &student, string whichCourse, int newScore); // student corresponds to the student whose score needs to be updated, whichCourse indicates which course's score should be updated ("Math" or "Science"), and newScore is the updated score.
+
+Hint: use getline() to receive student's names as they may contain whitespaces. Also, call cin.ignore() before calling getline() to ensure correct reading.
