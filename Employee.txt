@@ -1,0 +1,34 @@
+Define an Employee class that contains:
+
+(1) three private member variables: name (string), salary (float), and startYear (int)
+
+(2) the corresponding accessors and mutators for the above member variables in the public section
+
+string getName(); return the value of the name variable
+float getSalary(); return the value of the salary variable
+int getStartYear(); return the value of the startYear variable
+void setName(string); set the name variable
+void setSalary(float); set the salary variable
+void setStartYear(int); set the startYear variable
+(3) two constructors
+
+the default constructor that sets name as "Unknown", salary as 0, startYear as 2021
+an overloaded constructor that takes three parameters as input in the order of a string, a float, and an integer, then sets the three private member variables defined above
+(4) one public function void printOut() that outputs the information of an employee in the following format:
+
+<name> joined the company in <startYear>, current salary: <salary>
+salary should be output with double digit precision.
+
+In the main() function,
+
+declare an Employee object and set its member variables' values according to the user input with the following format
+<name>
+<salary>
+<startYear>
+employee's name may contain whitespaces. The program then outputs the following
+
+Added new employee <name> with entrance salary: <salary>
+salary should be output with double digit precision.
+
+declare an Employee array with 4 elements where appropriate to make the remaining code work
+The main is commented in the initial template to allow you to test the class first (Test cases 1-5). After passing these test cases, uncomment and complete the main. Uncommenting the main while your class is still incomplete will lead to compiler errors.
