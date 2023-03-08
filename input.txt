@@ -1,0 +1,15 @@
+Write a program that first gets the name of a file from input and uses it to read a list of integers from the requested file. You can safely assume the number of integers in the file is always less than 20. The program will compute the average of the integers and then find the integers whose values are larger than the average of the array.
+
+Ex: if the input file contains:
+
+10 31 42 67 72 55
+the program will output
+
+67 72 55
+You MUST define and call the following function to compute the average. The function takes the array data and its size as input, and compute and return the integer average of the array
+
+int ComputeAverage(int data[ ], int size);
+
+You MUST define and call the following function that will call the above average computation function and find the integers whose values are larger than the average of the array. The argument list of the function consists of the array data and its size, the integer array largeValues storing the integers whose values are larger than the computed average, and the number of integers nLargeValues in the largeValues array.
+
+void FindLargeValues(int data[ ], int size, int largeValues[ ], int &nLargeValues);
